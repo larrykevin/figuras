@@ -133,6 +133,7 @@ main {
     text-align: center;
 }
 .figure__cuadrado button {
+    margin-top: -40px;
     background-color: #6461EB;
 }
 .cuadrado {
@@ -141,16 +142,19 @@ main {
     background-color: #9896F3;
 }
 .figure__triangulo form div:nth-of-type(1) {
-    position: absolute;
+    position: relative;
     z-index: 1;
-    margin-top: -100px;
-    margin-left: -190px;
+    top: -100px;
+    left: -90px;
 }
 .figure__triangulo form div:nth-of-type(2) {
-    position: absolute;
+    position: relative;
     z-index: 1;
-    margin-top: -100px;
-    margin-left: 180px;
+    top: -160px;
+    left: 90px;
+}
+.figure__triangulo form div:nth-of-type(3) {
+    margin-top: -110px;
 }
 .figure__triangulo label {
     display: flex;
@@ -163,6 +167,7 @@ main {
     text-align: center;
 }
 .figure__triangulo button {
+    margin-top: 15px;
     background-color: #2dade3;
 }
 .triangulo {
@@ -178,13 +183,14 @@ main {
     text-align: center;
 }
 .figure__circulo button {
+    margin-top: -40px;
     background-color: #e9a838;
 }
 .figure__circulo form div {
-    position: absolute;
+    position: relative;
     z-index: 1;
-    margin-top: -80px;
-    margin-left: -110px;
+    top: -133px;
+    left: -55px;
     width: 2px;
     height: 22px;
     color: #b37c1e;
@@ -215,9 +221,10 @@ main {
           transform: rotate(90deg);
 }
 .figure__circulo form span {
-    position: absolute;
-    margin-top: -110px;
-    margin-left: -60px;
+    position: relative;
+    z-index: 1;
+    top: -180px;
+    left: -30px;
 }
 .circulo {
     width: 114px;
