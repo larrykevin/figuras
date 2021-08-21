@@ -112,7 +112,7 @@ function redondearDecimales(numero, decimales) {
     numeroRegexp = new RegExp('\\d\\.(\\d){' + decimales + ',}');
     // Expresion regular para números con un cierto número de decimales o mas
     if (numeroRegexp.test(numero)) {
-        // Ya que el numero tiene el número de decimales requeridos o mas, se realiza el redondeo
+        // Ya que el número tiene el número de decimales requeridos o mas, se realiza el redondeo
         return Number(numero.toFixed(decimales));
     } else {
         return Number(numero.toFixed(decimales)) === 0 ? 0 : numero;
