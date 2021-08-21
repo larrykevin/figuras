@@ -286,3 +286,45 @@ main {
     border: 1px solid #c4c4e0;
     border-radius: 9px;
 }
+
+@media (min-width: 600px) {
+    .box p {
+        max-width: 600px;
+    }
+    .header__container {
+        margin: 0 auto;
+        max-width: 1024px;
+        flex-direction: initial;
+    }
+    main {
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas:
+            "response"
+            "figure"
+            "box"
+        ;
+        grid-template-rows: repeat(3, auto);
+    }
+    .figure {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .response__perimetro {
+        padding-top: 12px;
+        margin-bottom: 24px;
+        border-top: none;
+    }
+    .response {
+        padding: 32px;
+    }
+    .response span {
+        padding: 24px 12px;
+        height: 55px;
+        max-width: 800px;
+        background-color: white;
+        border: 1px solid #C4C4E0;
+        box-shadow: 0px 4px 12px rgba(129, 127, 228, 0.32);
+        border-radius: 16px;
+    }
+}
